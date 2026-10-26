@@ -749,7 +749,61 @@ body {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
 
+.hero-image-wrapper img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.floating-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 16px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    font-size: 13px;
+    color: #1e1b4b;
+}
+
+.card-top {
+    top: 25px;
+    right: -25px;
+}
+
+.card-bottom {
+    bottom: 35px;
+    left: -25px;
+}
+
+.card-icon {
+    font-size: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text strong {
+    font-weight: 700;
+    font-size: 13px;
+    color: #0f172a;
+}
+
+.card-text span {
+    font-size: 11px;
+    color: #64748b;
+}
 
     
 
