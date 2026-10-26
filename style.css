@@ -390,4 +390,20 @@ body {
     display: block;
     margin: 2rem auto 0 auto;
 }
+.hero-image-container {
+    width: 390px !important;
+    height: 399px !important;
+    max-width: 100%;
+    margin: 2rem auto 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.hero-image-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+    display: block !important;
+}
 
