@@ -743,6 +743,11 @@ body {
         max-width: 390px !important;
         height: auto !important;
     }
+} 
+.logo span.gradient-text {
+    background: linear-gradient(135deg, #7c3aed, #db2777) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 
