@@ -70,7 +70,6 @@ body {
   font-weight: bold;
 }
 
-/* --- Hero Section --- */
 .hero {
   padding: 60px 0;
   background-color: #ffffff;
@@ -143,8 +142,6 @@ body {
   border-radius: 20px;
   object-fit: cover;
 }
-
-/* --- Features Section --- */
 .features {
   padding: 60px 0;
   background-color: #f8f9fe;
@@ -183,7 +180,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* --- Rooms Section --- */
+
 .rooms {
   padding: 60px 0;
 }
@@ -207,6 +204,8 @@ body {
 .room-img {
   position: relative;
   height: 180px;
+  width: 100%
+  overflow: hidden;
 }
 
 .room-img img {
