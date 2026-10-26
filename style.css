@@ -1,20 +1,23 @@
-body {
-margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #F8F9FA;
   color: #2D3436;
   line-height: 1.6;
 }
-.top-bar{
-  background-color:#3b205d;
+
+.top-bar {
+  background-color: #3b205d;
   color: #ffffff;
   font-size: 13px;
-  padding: 8px 20px:
+  padding: 8px 20px;
 }
+
 .top-bar-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,58 +25,52 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main-header{
+
+.main-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #fffffff;
+  background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
 }
-.nav-container{
+
+.nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px 20px
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center:
+  align-items: center;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: o;
+  margin: 0;
   padding: 0;
 }
-.nav-links a{
+
+.nav-links a {
   text-decoration: none;
   color: #333333;
   font-weight: 500;
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
   color: #3b205d;
 }
-.btn-rezervare{
+
+.btn-rezervare {
   background-color: #3b205d;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-   @media(max-width: 768px){
-    .top-bar-container {
-      flex-direction: column;
-      gap: 5px;
-      text-align: center;
-      .nav-container{
-        flex-direction: column;
-        gap: 15px;
-      }
-      .nav-links{
-        flex-direction: column;
-        gap: 10px;
-        align-items:center;
-      }
-    }
+}
+
+/* --- Hero Section --- */
 .hero {
   padding: 60px 0;
   background-color: #ffffff;
@@ -268,9 +265,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.price-card {
+}.price-card {
   background: #ffffff;
   padding: 30px 20px;
   border-radius: 20px;
@@ -298,6 +293,21 @@ body {
 .price-card ul li {
   margin-bottom: 8px;
   font-size: 14px;
-} 
-    
-  
+}
+
+@media (max-width: 768px) {
+  .top-bar-container {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
