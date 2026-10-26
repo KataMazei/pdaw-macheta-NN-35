@@ -1,6 +1,6 @@
 body {
 margin: 0;
-  font-family: Arial> sans-serif:
+  font-family: Arial, sans-serif:
 }
 .top-bar{
   background-color:#3b205d;
@@ -16,7 +16,7 @@ margin: 0;
   align-items: center;
 }
 .main-header{
-  pozition: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #fffffff;
@@ -56,7 +56,7 @@ margin: 0;
     .top-bar-container {
       flex-direction: column;
       gap: 5px;
-      text-aling: center;
+      text-align: center;
       .nav-container{
         flex-direction: column;
         gap: 15px;
@@ -64,18 +64,234 @@ margin: 0;
       .nav-links{
         flex-direction: column;
         gap: 10px;
-        aling-items:center;
+        align-items:center;
       }
     }
-    *{
-      margin:0;
-      padding:0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI',Roboto, sans-serif;
-      background-color: #F8F9FA;
-      color: #2D3436;
-      line-height: 1.6;
-    }
+    /* --- Hero Section --- */
+.hero {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  color: #636e72;
+  margin-bottom: 25px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background-color: #f0edff;
+  color: #6c5ce7;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 24px;
+  color: #2d3436;
+}
+
+.stat-item span {
+  font-size: 13px;
+  color: #636e72;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* --- Features Section --- */
+.features {
+  padding: 60px 0;
+  background-color: #f8f9fe;
+}
+
+.section-tag {
+  color: #6c5ce7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin: 10px 0 30px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.feature-card .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* --- Rooms Section --- */
+.rooms {
+  padding: 60px 0;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.room-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.room-img {
+  position: relative;
+  height: 180px;
+}
+
+.room-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-tag, .discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.top-tag { background: #e17055; }
+.discount-badge { background: #00b894; }
+
+.room-info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-info .price {
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --- Pricing Section --- */
+.pricing {
+  padding: 60px 0;
+  background: #f8f9fe;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.price-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.price-card.featured {
+  background: #1e1e2f;
+  color: #ffffff;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.price-card ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+} 
+    
   
