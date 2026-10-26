@@ -423,7 +423,6 @@ body {
     gap: 50px;
 }
 
-/* Partea stângă cu text */
 .hero-content {
     flex: 1;
     display: flex;
@@ -432,7 +431,7 @@ body {
     text-align: left;
 }
 
-/* Titlul principal */
+
 .hero-content h1 {
     font-size: 3rem;
     font-weight: 800;
@@ -441,7 +440,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Gradientul pe text */
 .hero-content h1 span {
     background: linear-gradient(135deg, #7c3aed, #db2777);
     -webkit-background-clip: text;
@@ -455,5 +453,97 @@ body {
     border-radius: 24px !important;
     display: block;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+} 
+.hero-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+.hero-container {
+    max-width: 1150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1e1e2f;
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 span {
+    background: linear-gradient(135deg, #7c3aed, #db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stats strong {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e1e2f;
+}
+
+.hero-stats span {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.hero-image img {
+    width: 390px !important;
+    height: 399px !important;
+    min-width: 390px;
+    object-fit: cover !important;
+    border-radius: 24px !important;
+    display: block;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+    .hero-stats {
+        justify-content: center;
+    }
+    .hero-image img {
+        width: 100% !important;
+        max-width: 390px;
+        height: auto !important;
+    }
 }
 
