@@ -384,4 +384,13 @@ body {
     background: linear-gradient(135deg, #7c3aed, #db2777);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+} 
+.hero-section img {
+    width: 390px;           
+    height: 399px;          
+    object-fit: cover;      
+    border-radius: 20px;    
+    display: block;
+    margin: 2rem auto 0 auto;
 }
+
