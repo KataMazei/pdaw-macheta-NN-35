@@ -1,9 +1,5 @@
 .top-bar { 
-  background-color: #3b205d;
-  color: #ffffff
-    font-size: 13px;
-  padding: 8px 20 px;
-  width: 100%;
+%;
 }
 .top-bar-container {
   max-width: 960px;
