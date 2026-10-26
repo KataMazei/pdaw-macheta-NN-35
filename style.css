@@ -1,3 +1,67 @@
+.top-bar { 
+  background-color: #3b205d;
+  color: #ffffff
+    font-size: 13px;
+  padding: 8px 20 px;
+  width: 100%;
+}
+.top-bar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  aling-items: center;
+} 
+.main-header {
+  position: sticky;
+  top:0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%
+}
+nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #3b205d;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3b205d;
+}
+
+.btn-rezervare {
+  background-color: #3b205d;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
 * {
   margin: 0;
   padding: 0;
