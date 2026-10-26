@@ -1,6 +1,13 @@
 body {
 margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body {
   font-family: Arial, sans-serif;
+  background-color: #F8F9FA;
+  color: #2D3436;
+  line-height: 1.6;
 }
 .top-bar{
   background-color:#3b205d;
